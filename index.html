@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+
+  <div class="hamburger-menu">
+    <input type="checkbox" id="menu-btn-check">
+    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+    <div class="menu-content">
+      <ul>
+          <li>
+            <a href="./index.html">About</a>
+          </li>
+          <li>
+            <a href="./workList.html">Works</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+      </ul>
+  </div>
+  </div>
+
+  <div class="contentsArea">
+
+    <div class="headerToTop">
+
+      <header>
+        <a class="logo-PC menu-PC" href="./index.html">
+          <img class="logo" src="./assets/logo.png" alt="logo">
+        </a>
+        <a class="logo-SP" href="./index.html">
+          <img class="logo" src="./assets/logo-SP.png" alt="logo">
+        </a>
+        <ul class="en navBox menu-PC">
+          <li class="navLink"><a href="./index.html">About</a></li>
+          <li class="navLink"><a href="./workList.html">Works</a></li>
+          <li class="navLink"><a href="#contact">Contact</a></li>
+        </ul>
+      </header>
+
+      <section class="top">
+        <h1 class="catchPhrase en">Design Makes Everyday Happy</h1>
+        <p class="catchPhraseSmall grey">デザインで日々にちょっとした幸せを</p>
+        <img src="./assets/Top.png" alt="topPhoto" class="TopPhoto">
+      </section>
+
+    </div>
+
+    <section class="aboutMe">
+      <h2 class="sectionTitle en">About ME</h2>
+      <div class="selfIntroduction">
+        <div class="contentTitleBox">
+          <h3 class="en">Self-Introduction</h3>
+          <div class="contentTitleBg blue"></div>
+        </div>
+        <div class="description selfIntroductionDescription">平松大悟朗（Hiramatsu Daigoro）。東京在住。1997年生まれ。<br>
+          大学時代に、独学でプログラミングを学び、2020年にフロントエンジニアになるも、Webデザインの仕事を諦めきれず退社。<br>
+          再び独学でプログラミングとデザインを学び、現在はUI/UXデザイナーとして株式会社ARCHECOに再就職。
+        </div>
+        <img class="profilePhoto" src="./assets/profilePhoto.png" alt="profilePhoto">
+      </div>
+      <div>
+        <div class="contentTitleBox">
+          <h3 class="en">Design Motto</h3>
+          <div class="contentTitleBg orange"></div>
+        </div>
+        <div class="description">
+          私にとってデザインとは、問題を解決するための一つの手段であり、毎日を楽しくするものだと考えています。
+          そのために、クライアントからの要求事項に対して常に疑いの目を持つこととグラフィックやインタラクションでちょっとした楽しみを作ることを意識してデザインを行っています。
+        </div>
+      </div>
+    </section>
+    
+    <section class="whatICanDo">
+      <h2 class="sectionTitle en">what I Can Do</h2>
+      <div class="column3">
+        <div class="column3-1">
+          <img class="illustration" src="./assets/idea.png" alt="UI&UX">
+          <div class="contentTitleBox">
+            <h3 class="en">UI&UX</h3>
+            <div class="contentTitleBg blue"></div>
+          </div>
+          <div class="description"> 
+            お客様の要望をヒアリングし、問題を解決する企画やデザインを提案します。その後、Figmaを使用し、Auto Layoutなどの機能を使用しデザインを作成します。使う人が心地よく使用できるかつ、見た目も担保したデザインを心がけます。
+          </div>
+        </div>
+
+        <div class="column3-1">
+          <img class="illustration" src="./assets/pen.png" alt="Logo&Visual ">
+          <div class="contentTitleBox">
+            <h3 class="en">Logo&Visual </h3>
+            <div class="contentTitleBg orange"></div>
+          </div>
+          <div class="description"> 
+            ヒアリングに基づいて、コンセプトにあったロゴを作成します。また、PhotoshopやIllustrator、Premire ProでWeb制作などに必要な写真やイラストの素材、動画素材を作成することができます。
+          </div>
+        </div>
+
+        <div class="column3-1">
+          <img class="illustration" src="./assets/cloud.png" alt="Coding">
+          <div class="contentTitleBox">
+            <h3 class="en">Coding</h3>
+            <div class="contentTitleBg green"></div>
+          </div>
+          <div class="description"> 
+            HTML,CSS,JavaScriptを使用し、デザインを形にします。デザインの意図を理解し、それに合わせて効果的なアニメーションをつけることができます。JavaScriptは、JQueryやReactを触ることができます。Firebaseは勉強中。バージョン管理には<a class="textLink git" href="https://github.com/bibimuu?tab=repositories">GitHub<span><img src="./assets/git.png" alt="github"></span></a>使用。
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contactBox">
+        <h2 class="sectionTitle en">Contact</h2>
+        <div class="description contactDescription">
+          UI/UX,ロゴ作成,イラスト制作などの依頼・ご相談はお気軽にお問い合わせくださいませ。<br>
+          作品の感想やフィードバックもいただけると嬉しいです🦄
+        </div>
+        <div class="iconBox">
+          <a href="#"><img class="icon" src="./assets/Instagram_black.png" alt="instagram"><p class="hukidashi1">気軽にイラストを見にきてね</p></a>
+          <a href="#"><img class="icon" src="./assets/Twitter_black.png" alt="twitter"><p class="hukidashi2">問い合わせはDMからだよ</p></a>
+        </div>
+      </div>
+      <img class="contactPhoto" src="./assets/contact.png" alt="contact">
+    </section>
+  </div>
+  <footer>
+    <div class="contentsArea footerBox">
+      <ul class="en footernavBox">
+        <li class="footerNavLink"><a href="./index.html">About</a></li>
+        <li class="footerNavLink"><a href="./workList.html">Works</a></li>
+        <li class="footerNavLink"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="copyRight">
+        &copy; 2022 DaigoroHiramatsu
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

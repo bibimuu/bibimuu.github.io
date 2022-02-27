@@ -1,0 +1,413 @@
+@media screen and (max-width: 1024px) {
+  /*　画面サイズが429pxからはここを読み込む　*/
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu-PC {
+    display: none;
+  }
+
+  .logo-SP {
+    display: block;
+  }
+
+  .logo {
+    width: 30px;
+  }
+
+  .logo-PC {
+    display: none;
+  }
+
+  header {
+    padding-left: 2rem;
+    padding-top: 2.5rem;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+    background-color: #98d4ef;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.185);
+    border-radius: 100%;
+  }
+
+  .menu-btn span,
+  .menu-btn span:before,
+  .menu-btn span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: 0.5s;
+  }
+
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+  .menu-btn span:after {
+    top: 8px;
+  }
+
+  #menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0
+    ); /*メニューオープン時は真ん中の線を透明にする*/
+  }
+  #menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+    transition: 0.5s;
+  }
+  #menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+  }
+
+  #menu-btn-check {
+    display: none;
+  }
+
+  .menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 80;
+    background-color: #98d3efe3;
+    backdrop-filter: blur(5px);
+    transition: all 0.5s; /*アニメーション設定*/
+  }
+
+  #menu-btn-check:checked ~ .menu-content {
+    left: 0; /*メニューを画面内へ*/
+  }
+
+  .menu-content ul {
+    padding: 100px 25px 0;
+  }
+
+  .menu-content ul li {
+    list-style: none;
+    padding-bottom: 16px;
+  }
+
+  .menu-content ul li::after {
+    margin-top: 8px;
+    background-color: #ffffff7e; /* 線色 */
+    border-radius: 1.5px; /* 線幅の半分 */
+    content: "";
+    display: block;
+    height: 3px; /* 線幅 */
+  }
+
+  .menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem;
+    position: relative;
+    margin-top: 1rem;
+  }
+
+  .menu-content ul li a::before {
+    content: ""; /* 疑似要素に指定必須 */
+    width: 16px; /* 線の長さを指定 */
+    height: 3px; /* 線の幅を指定 */
+    display: inline-block; /* インラインブロックにする */
+    border-radius: 2px; /* 線を角丸にする */
+    background: #fff; /* 線の色を指定 */
+    position: absolute; /* 相対位置に指定 */
+    right: 10px; /* 右から10pxの位置に配置 */
+    top: calc(50% - 6px); /* 数値は微調整してください */
+    transform: rotate(45deg); /* 45度回転させる */
+  }
+
+  .menu-content ul li a::after {
+    content: ""; /* 疑似要素に指定必須 */
+    width: 16px; /* 線の長さを指定 */
+    height: 3px; /* 線の幅を指定 */
+    display: inline-block; /* インラインブロックにする */
+    border-radius: 2px; /* 線を角丸にする */
+    background: #fff; /* 線の色を指定 */
+    position: absolute; /* 相対位置に指定 */
+    right: 10px; /* 右から10pxの位置に配置 */
+    bottom: calc(50% - 6px); /* 数値は微調整してください */
+    transform: rotate(-45deg); /* -45度回転させる */
+  }
+
+  .menu {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menuBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .menuLink {
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+  }
+
+  .menuLink:last-child {
+    margin-bottom: 0rem;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3.6875rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .navLink {
+    margin: 2rem 1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .catchPhrase {
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+
+  .catchPhraseSmall {
+    padding: 0.5rem 0 2.5rem 2rem;
+  }
+
+  .top,
+  .contact,
+  .aboutMe,
+  .design {
+    margin-bottom: 4.5rem;
+  }
+
+  .sectionTitle {
+    margin-bottom: 2rem;
+  }
+
+  .contentsArea {
+    max-width: 429px;
+  }
+
+  .headerToTop {
+    margin-right: calc((100vw - 397px) / -2);
+    padding-right: calc((100vw - 397px) / 2);
+  }
+
+  .profilePhoto {
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+  }
+
+  .whatICanDo,
+  .information {
+    background: rgba(255, 255, 255, 0.7);
+    margin-left: calc((100vw - 397px) / -2);
+    padding: 4rem 2rem 4rem calc((100vw - 397px) / 2);
+  }
+
+  .column3 {
+    display: block;
+  }
+
+  .column3-1 {
+    width: 100%;
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+  }
+
+  .column3-1:last-child {
+    margin-bottom: 0rem;
+  }
+
+  .contact {
+    display: block;
+    margin-top: 4.5rem;
+  }
+
+  .contactPhoto {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .hukidashi2:after {
+    bottom: 38px;
+  }
+
+  .hukidashi1:after {
+    bottom: 38px;
+  }
+
+  .hukidashi1 {
+    top: 5rem;
+    left: 5px;
+  }
+
+  .hukidashi2 {
+    top: 5rem;
+    left: 80px;
+  }
+
+  .works,
+  .workDetailTop {
+    background: rgba(255, 255, 255, 0.7);
+    margin-right: calc((100vw - 397px) / -2);
+    padding: 0 calc((100vw - 397px) / 2) 4rem 2rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .column2 {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .workPhoto {
+    width: 100%;
+  }
+
+  .workLeft {
+    margin-bottom: 3rem;
+  }
+
+  .workDetailPhoto {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  .workDetailsBox {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .workDescriptionBox {
+    width: 100%;
+  }
+
+  .workPhotoBox {
+    display: block;
+  }
+
+  .workDetailPhotoUnder,
+  .workDetailPhotoOther {
+    margin-bottom: 1rem;
+  }
+
+  .photoDescription {
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+  }
+
+  .workPhotoBoxOther {
+    width: 100%;
+  }
+
+  .footerBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .copyRight {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  /*　画面サイズが428px以下からはここを読み込む　*/
+  .contentsArea {
+    max-width: 375px;
+  }
+
+  .headerToTop {
+    margin-right: calc((100vw - 343px) / -2);
+    padding-right: calc((100vw - 343px) / 2);
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7) 90%,
+      rgba(255, 255, 255, 0) 90%
+    );
+  }
+
+  .whatICanDo,
+  .information {
+    margin-left: calc((100vw - 343px) / -2);
+    padding: 4rem 2rem 4rem calc((100vw - 343px) / 2);
+  }
+
+  .works,
+  .workDetailTop {
+    margin-right: calc((100vw - 343px) / -2);
+    padding: 0 calc((100vw - 343px) / 2) 4rem 2rem;
+  }
+
+  .copyRight {
+    margin-bottom: 2rem;
+  }
+
+  .catchPhraseSmall {
+    padding: 1.5rem 0 2.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contentsArea {
+    max-width: 320px;
+  }
+
+  .headerToTop {
+    margin-right: calc((100vw - 288px) / -2);
+    padding-right: calc((100vw - 288px) / 2);
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7) 90%,
+      rgba(255, 255, 255, 0) 90%
+    );
+  }
+
+  .whatICanDo,
+  .information {
+    margin-left: calc((100vw - 288px) / -2);
+    padding: 4rem 2rem 4rem calc((100vw - 288px) / 2);
+  }
+
+  .works,
+  .workDetailTop {
+    margin-right: calc((100vw - 288px) / -2);
+    padding: 0 calc((100vw - 288px) / 2) 4rem 2rem;
+  }
+}
