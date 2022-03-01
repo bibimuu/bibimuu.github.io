@@ -13,16 +13,39 @@
 </head>
 <body>
 
+  <div class="hamburger-menu">
+    <input type="checkbox" id="menu-btn-check">
+    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+    <div class="menu-content">
+      <ul>
+          <li>
+            <a href="./index.html">About</a>
+          </li>
+          <li>
+            <a href="./workList.html">Works</a>
+          </li>
+          <li>
+            <a href="./index.html#contact">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="contentsArea">
 
     <div class="works">
 
-      <header>
-        <div class="logo"></div>
-        <ul class="en navBox">
+      <header class="headerNotTop">
+        <a class="logo-PC menu-PC" href="./index.html">
+          <img class="logo" src="./assets/logo.png" alt="logo">
+        </a>
+        <a class="logo-SP" href="./index.html">
+          <img class="logo" src="./assets/logo-SP.png" alt="logo">
+        </a>
+        <ul class="en navBox menu-PC">
           <li class="navLink"><a href="./index.html">About</a></li>
           <li class="navLink"><a href="./workList.html">Works</a></li>
-          <li class="navLink"><a href="./index.html#contact">Contact</a></li>
+          <li class="navLink"><a href="./index.html#contact"">Contact</a></li>
         </ul>
       </header>
 
@@ -32,7 +55,7 @@
 
         <div class="column2">
           <div class="workLeft">
-            <a href="#">
+            <a href="./workDetailAM.html">
               <img class="workPhoto" src="./assets/AM.png" alt="AM">
               <div class="contentTitleBox">
                 <h3>芸能事務所のWEBサービス：WEBAPP</h3>
@@ -56,7 +79,7 @@
 
         <div class="column2">
           <div class="workLeft">
-            <a href="#" class="cardAnimation">
+            <a href="./workDetailCI.html" class="cardAnimation">
               <img class="workPhoto" src="./assets/CI.png" alt="AM">
               <div class="contentTitleBox">
                 <h3>引っ越しタスク管理：APP</h3>
@@ -67,7 +90,7 @@
           </div>
 
           <div>
-            <a class="cardAnimation" href="#">
+            <a class="cardAnimation" href="./workDetailCR.html">
               <img class="workPhoto" src="./assets/CR.png" alt="ML">
               <div class="contentTitleBox">
                 <h3>医療従事者向けサービス：業務APP</h3>

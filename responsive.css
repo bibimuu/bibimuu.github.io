@@ -26,6 +26,10 @@
     padding-top: 2.5rem;
   }
 
+  .headerNotTop {
+    margin-bottom: 2.5rem;
+  }
+
   .menu-btn {
     position: fixed;
     top: 16px;
@@ -69,11 +73,13 @@
       0
     ); /*メニューオープン時は真ん中の線を透明にする*/
   }
+
   #menu-btn-check:checked ~ .menu-btn span::before {
     bottom: 0;
     transform: rotate(45deg);
     transition: 0.5s;
   }
+
   #menu-btn-check:checked ~ .menu-btn span::after {
     top: 0;
     transform: rotate(-45deg);
@@ -303,6 +309,11 @@
 
   .workLeft {
     margin-bottom: 3rem;
+  }
+
+  .workPhotoBoxLeft,
+  .workPhotoBoxRight {
+    width: auto;
   }
 
   .workDetailPhoto {

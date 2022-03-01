@@ -141,6 +141,10 @@ header {
   padding-left: 65px;
 }
 
+.headerNotTop {
+  padding-left: 0;
+}
+
 .logo {
   width: 159px;
 }
@@ -391,8 +395,13 @@ footer {
   align-items: flex-start;
 }
 
-.workPhotoBoxOther {
+.workPhotoBoxLeft,
+.workPhotoBoxRight {
   width: calc(960px / 2 - 2rem);
+}
+
+.workPhotoBoxOther {
+  width: calc(960px / 2 - 4rem);
 }
 
 .photoDescription {
