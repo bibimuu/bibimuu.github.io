@@ -410,6 +410,29 @@ footer {
   color: #5d6571;
 }
 
+/* worksVariants */
+.worksAssetsContainerPC {
+  display: flex;
+  justify-content: space-between;
+}
+
+.worksAssetsContainerSP {
+  display: none;
+}
+
+.worksAssetsBox1,
+.worksAssetsBox2,
+.worksAssetsBox3 {
+  width: calc(960px / 3 - 1rem);
+  display: flex;
+  flex-direction: column;
+}
+
+.worksAssets {
+  width: calc(960px / 3 - 2rem);
+  margin-bottom: 1.5rem;
+}
+
 /* ANIMATION */
 .git {
   position: relative;

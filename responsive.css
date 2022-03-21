@@ -356,6 +356,19 @@
   .copyRight {
     padding-bottom: 2rem;
   }
+
+  .worksAssetsContainerPC {
+    display: none;
+  }
+
+  .worksAssetsContainerSP {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .worksAssets {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 428px) {

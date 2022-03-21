@@ -27,3 +27,31 @@ $(function(){
     console.log(8)
   });
 });
+
+$(function(){
+  ScrollReveal().reveal('.worksAssets',{
+    duration: 1000, // アニメーションの完了にかかる時間
+    viewFactor: .8, // 0~1,どれくらい見えたら実行するか
+  });
+})
+
+$(function(){
+  ScrollReveal().reveal('.worklistShow',{
+    duration: 1000, // アニメーションの完了にかかる時間
+    viewFactor: .4, // 0~1,どれくらい見えたら実行するか
+  });
+})
+
+$(function(){
+  ScrollReveal().reveal('.showSection',{
+    duration: 1000, // アニメーションの完了にかかる時間
+    viewFactor: .3, // 0~1,どれくらい見えたら実行するか
+  });
+})
+
+$(function(){
+  window.onload = ()=>{
+    const loader = document.getElementById('loader');
+    loader.classList.add('loaded');
+}
+})
