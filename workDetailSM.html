@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+
+  <div class="hamburger-menu">
+    <input type="checkbox" id="menu-btn-check">
+    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+    <div class="menu-content">
+      <ul>
+          <li>
+            <a href="./index.html">About</a>
+          </li>
+          <li>
+            <a href="./workList.html">Works</a>
+          </li>
+          <li>
+            <a href="./index.html#contact"">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contentsArea">
+
+    <div class="workDetailTop">
+
+      <header class="headerNotTop">
+        <a class="logo-PC menu-PC" href="./index.html">
+          <img class="logo" src="./assets/logo.png" alt="logo">
+        </a>
+        <a class="logo-SP" href="./index.html">
+          <img class="logo" src="./assets/logo-SP.png" alt="logo">
+        </a>
+        <ul class="en navBox menu-PC">
+          <li class="navLink"><a href="./index.html">About</a></li>
+          <li class="navLink"><a href="./workList.html">Works</a></li>
+          <li class="navLink"><a href="./index.html#contact"">Contact</a></li>
+        </ul>
+      </header>
+
+      <section class="showSection">
+        <h1 class="en">Work Detail</h1>
+        <p class="pageTitleSmall grey">SUUMO：スマホサイト</p>
+        <div class="workDetailsBox">
+          <div class="workDescriptionBox">
+            <div class="description">
+              SUUMOからのスマホデザインリニューアルの依頼があり、2パターン提案デザインを作成しました。
+              2012年以降SUUMOスマホデザインのアップデートが行われておらず、ビジュアルデザインが他社競合よりも劣っているためリニューアルしたいということでした。
+            </div>
+            <div class="detailsBox">
+              <div class="labels">
+                <p class="label">担当：</p>
+                <p class="label">期間：</p>
+                <p class="label">ツール：</p>
+              </div>
+              <div class="items">
+                <p class="item">UIデザイン</p>
+                <p class="item">2022年4月末 〜 5月中旬</p>
+                <p class="item">Figma</p>
+              </div>
+            </div>
+          </div>
+          <img class="workDetailPhoto" src="./assets/SM.png" alt="SM">
+        </div>
+      </section>
+
+    </div>
+
+    <section class="design showSection">
+      <h2 class="sectionTitle en">Design Problem</h2>
+      <div class="problem">
+        <div class="contentTitleBox">
+          <h3 class="en">Problem</h3>
+          <div class="contentTitleBg blue"></div>
+        </div>
+        <div class="description">
+          古いデザインのサイトであることの問題は2点あると思いました。<br>
+          <div class="margin-1">
+            <div class="font-b">①視認性の悪さをユーザーが感じてしまう可能性が高い。</div>
+            スマートフォンで物件を探すユーザーは、普段からスマートフォンを使用してリサーチをしていることが多いため、IOS/AndroidのUIや新しいアプリに触れる機会が高い可能性があります。<br>
+            IOS/AndroidのUIや新しいアプリには、ユーザーにとって視認性の高いデザインや思わずクリックしたくなるようなデザインが使用されています。普段からそのようなデザインを見ているユーザーにとって、古いデザインは見慣れたものではないため、視認性の悪さを感じてしまいます。<br>
+            デザインの視認性の悪さは、アプリの使いやすさに強く影響し、ユーザーのページ離脱につながります。これによって新規ユーザーや既存ユーザーが別のサービスサイトへと乗り換える可能性があります。<br>
+          </div>
+          <div class="margin-1">
+            <div class="font-b">②新規ユーザーが競合他社に流れてしまう可能性がある。</div>
+            新規ユーザーは、同系統のサービスをさまざまな観点で見比べてどの特定のサービスを使用するかを決めます。<br>
+            例えば、「楽天」を使うか「Amazon」を使用するかなど。<br>
+            新規ユーザーが、同系統のサービスを見比べる際に慎重に調べて使用するサービスを選ぶ可能性もあれば、サイトのデザインが新しいからという理由でサービスを選ぶ可能性もあります。<br>
+            後者の場合、ユーザーはWebサイトの「見た目」が古いから選ばなかったのではなく、Webサイトの「見た目」が古いと掲載されている情報も古いと認識する可能性が高いためです。そのため、自然と新しい情報のありそうな「見た目」の新しい方を選びます。（不動産屋さんの例：駅前の古い不動産を見るといつの情報の物件がのってるのだろうか？と思うが、外観の綺麗な不動産屋さんを見ると新しい物件をたくさん紹介しているのではと思う）<br>
+            このようにデザインの更新頻度が低いと会社自体が最新の情報を扱っていないと感じられる可能性があります。
+            よって、古いデザインのままでは、新規ユーザーが競合他社に流れてしまう可能性があると言えます。
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="information showSection section-margin-bottom">
+      <h2 class="sectionTitle en">Design Solution その①</h2>
+      <div class="problem">
+        <div class="contentTitleBox">
+          <h3 class="en">Solution①</h3>
+          <div class="contentTitleBg orange"></div>
+        </div>
+        <div class="description">
+          図形やカラフルな色使いで「楽しさ」や「親やすさ」を第一にデザインしました。
+          <div class="margin-1">
+            <div class="font-b">①使用している幾何学の図形</div>
+            丸をメインとした図形を取り入れることで「優しい」「親やすい」雰囲気をユーザーが感じられるようにしました。また、図形の中で色を切り替えたり、図形の中にドットの模様を入れることで、「楽しさ」「遊び心」を表現しました。
+          </div>
+          <div class="margin-1">
+            <div class="font-b">②ピンクと黄色</div>
+            SUUMOのメインカラーである緑色と一緒に「ピンク」や「黄色」など彩度の高い明るい色を使用することで、ユーザーが「信頼感」を感じられるような明るい印象のあるトップページにしました。
+          </div>
+          <div class="margin-1">
+            <div class="font-b">③ボタンのデザイン</div>
+            近年のデザイントレンドを取り入れるため、各ボタンをカードのようにしました。また、角丸を強くし、影を深く落とすことでユーザーが思わずタップしたくなるようなUIを目指しました。<br>
+            また、ボタンの中にSUUMOくんをいれ、ユーザーが「優しさ」「親やすさ」を感じられるようにしました。
+          </div>
+        </div>
+      </div>
+
+      <div class="workPhotoBox">
+        <div class="workPhotoBoxOther">
+          <img class="workDetailPhotoOther" src="./assets/SM-1-left.png" alt="SM-1-left">
+        </div>
+        <div class="workPhotoBoxOther">
+          <img class="workDetailPhotoOther" src="./assets/SM-1-right.png" alt="SM-1-right">
+        </div>
+      </div>
+    </section>
+
+    <section class="design showSection">
+      <h2 class="sectionTitle en">Design Solution その②</h2>
+      <div class="problem">
+        <div class="contentTitleBox">
+          <h3 class="en">Solution②</h3>
+          <div class="contentTitleBg green"></div>
+        </div>
+        <div class="description">
+          「シンプルさ」を残しつつも「遊び心」を少し加えたデザインにしました。
+          <div class="margin-1">
+            <div class="font-b">①立体感のあるファーストビュー</div>
+            ファーストビューでは、切り絵のような雰囲気の建物のイラストを用いています。これは、ページに来たユーザーが賃貸のサイトであることが直感的にわかるようにしています。また、アクセスしている位置によってイラストが変わるようにしようと考えています。これによって、ユーザーに各土地の雰囲気を感じてもらいます。また、立体感をよりユーザーに味わってもらえるようにニューモフィズムデザイン（凸凹したボタン）をメニューボタンにつかっています。
+          </div>
+          <div class="margin-1">
+            <div class="font-b">②ブランドカラーである「明るい緑色」とモノトーンな配色</div>
+            ブランドカラーである「明るい緑色」と、彩度の薄い白色に近い緑色と白色を使用することで、シンプルな印象を作っています。白を基調とし、シンプルで清潔感のある印象にすることで、情報に対しての「透明性」やサービスとしての「信頼感」をユーザーが感じられるようにしています。
+            また、ファーストビューではブランドカラーを大胆に使うことでSUUMOのサイトであるということが直感的にわかるようになっています。
+          </div>
+          <div class="margin-1">
+            <div class="font-b">③フラットなボタンデザイン</div>
+            デザインとしての統一感を出すために、サイト全体を通して立体感を感じられるようにセクションごとに波がかった背景をいれています。ボタンはあえてフラットにすることで視認性を高くし、「シンプルさ」をユーザーが感じられるようにしています。
+          </div>
+        </div>
+      </div>
+
+      <div class="workPhotoBox">
+        <div class="workPhotoBoxOther">
+          <img class="workDetailPhotoOther" src="./assets/SM-2-left.png" alt="SM-2-left">
+        </div>
+        <div class="workPhotoBoxOther">
+          <img class="workDetailPhotoOther" src="./assets/SM-2-right.png" alt="SM-2-right">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact showSection">
+      <div class="contactBox">
+        <h2 class="sectionTitle en">Contact</h2>
+        <div class="description contactDescription">
+          制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>
+          作品の感想やフィードバックもいただけると嬉しいです🦄
+        </div>
+        <div class="iconBox">
+          <a href="https://www.instagram.com/goro56.official/"><img class="icon" src="./assets/Instagram_black.png" alt="instagram"><p class="hukidashi1">気軽にイラストを見にきてね</p></a>
+          <a href="./assets/resume.zip"><img class="icon" src="./assets/resume.png" alt="resume"><p class="hukidashi2">履歴書と職務経歴書はこちら</p></a>
+          <!-- <a href="#"><img class="icon" src="./assets/Twitter_black.png" alt="twitter"><p class="hukidashi2">問い合わせはDMからだよ</p></a> -->
+        </div>
+      </div>
+      <img class="contactPhoto" src="./assets/contact.png" alt="contact">
+    </section>
+  </div>
+  <footer>
+    <div class="contentsArea footerBox">
+      <ul class="en footernavBox">
+        <li class="footerNavLink"><a href="./index.html">About</a></li>
+        <li class="footerNavLink"><a href="./workList.html">Works</a></li>
+        <li class="footerNavLink"><a href="./index.html#contact">Contact</a></li>
+      </ul>
+      <div class="copyRight">
+        &copy; 2022 DaigoroHiramatsu
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>

@@ -36,6 +36,10 @@ a {
   text-decoration: none;
 }
 
+.margin-1{
+  margin-top: 1rem;
+}
+
 .textLink {
   border-bottom: dashed; /*下線を点線にする*/
   border-color: #98d4ef;
@@ -108,6 +112,10 @@ p {
   line-height: 1.8rem;
   letter-spacing: 0.3rem;
   color: #5d6571;
+}
+
+.font-b{
+  font-weight: bold;
 }
 
 /* COLOR */
@@ -188,7 +196,8 @@ header {
 .top,
 .contact,
 .aboutMe,
-.design {
+.design,
+.section-margin-bottom {
   margin-bottom: 6.5rem;
 }
 

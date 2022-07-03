@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./responsive.css">
+</head>
+<body>
+
+  <div class="hamburger-menu">
+    <input type="checkbox" id="menu-btn-check">
+    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+    <div class="menu-content">
+      <ul>
+          <li>
+            <a href="./index.html">About</a>
+          </li>
+          <li>
+            <a href="./workList.html">Works</a>
+          </li>
+          <li>
+            <a href="./index.html#contact"">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contentsArea">
+
+    <div class="workDetailTop">
+
+      <header class="headerNotTop">
+        <a class="logo-PC menu-PC" href="./index.html">
+          <img class="logo" src="./assets/logo.png" alt="logo">
+        </a>
+        <a class="logo-SP" href="./index.html">
+          <img class="logo" src="./assets/logo-SP.png" alt="logo">
+        </a>
+        <ul class="en navBox menu-PC">
+          <li class="navLink"><a href="./index.html">About</a></li>
+          <li class="navLink"><a href="./workList.html">Works</a></li>
+          <li class="navLink"><a href="./index.html#contact"">Contact</a></li>
+        </ul>
+      </header>
+
+      <section class="showSection">
+        <h1 class="en">Work Detail</h1>
+        <p class="pageTitleSmall grey">ライブ配信サービス：APP</p>
+        <div class="workDetailsBox">
+          <div class="workDescriptionBox">
+            <div class="description">
+              新機能であるライブ配信機能を既存アプリに入れる予定で、そのUIデザインを提案しました。
+              ペルソナから考え、ペルソナにあった機能やデザインテイスト、コンセプトを考えて配信者用・視聴者用のUIデザインを作成しました。
+            </div>
+            <div class="detailsBox">
+              <div class="labels">
+                <p class="label">担当：</p>
+                <p class="label">期間：</p>
+                <p class="label">ツール：</p>
+              </div>
+              <div class="items">
+                <p class="item">情報設計、UI/UXデザイン</p>
+                <p class="item">2021年6月末 〜 </p>
+                <p class="item">Figma</p>
+              </div>
+            </div>
+          </div>
+          <img class="workDetailPhoto" src="./assets/FL.png" alt="FL">
+        </div>
+      </section>
+
+    </div>
+
+    <section class="design showSection">
+      <h2 class="sectionTitle en">Persona</h2>
+      <div class="problem">
+        <div class="contentTitleBox">
+          <h3 class="en">Persona</h3>
+          <div class="contentTitleBg blue"></div>
+        </div>
+        <div class="description">
+          仮ペルソナを作成し、他アプリでライブ配信を見ているときに発生しえるユーザーが抱える問題や欲求を書き出しました。<br>
+          ピンチでズームアップして以下の資料を見ていただければと思います。
+        </div>
+      </div>
+
+      <div class="workPhotoBox">
+        <div class="workPhotoBoxLeft">
+          <img class="workDetailPhoto workDetailPhotoUnder" src="./assets/FL-視聴者-left.png" alt="FL-視聴者-left">
+          <p class="photoDescription">視聴者のペルソナ（仮）</p>
+        </div>
+        <div class="workPhotoBoxRight">
+          <img class="workDetailPhoto workDetailPhotoUnder" src="./assets/FL-配信者-right.png" alt="FL-配信者-right">
+          <p class="photoDescription">配信者のペルソナ（仮）</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="information showSection">
+      <h2 class="sectionTitle en">UI Design</h2>
+      <div class="problem">
+        <div class="contentTitleBox">
+          <h3 class="en">Concept</h3>
+          <div class="contentTitleBg orange"></div>
+        </div>
+        <div class="description">
+          <div class="font-b">クリエーターとファンが特別な繋がりを感じるライブ配信機能</div>
+          <div class="margin-1">
+            closedな特別な空間でお互いに繋がりを感じると、クリエイターとファンがお互いに楽しい時間を過ごせる。
+            その結果、クリエイターはファンのために活動しようと思えるし、ファンはクリエイターのことがもっと好きになり応援したいと思える。このクリエイターとファンの特別な繋がりがサービスの発展につながり、ステークホルダー全員が幸せになれると考えた。
+          </div>
+        </div>
+      </div>
+      <div class="solution">
+        <div class="contentTitleBox">
+          <h3 class="en">Description</h3>
+          <div class="contentTitleBg orange"></div>
+        </div>
+        <div class="description">
+          ペルソナから引きこみたい世界観として、1950’s アメリカンダイナーやロカビリーぽい雰囲気を選びました。<br>
+          テイスト実現のために行ったことは以下です。<br>
+          <div class="margin-1">
+            1. フォント→太め、大きめ、セリフ体、文字の間隔狭め 30px。他とのフォントのジャンプ率。<br>
+            2. いいねをハートではなく、さくらんぼで世界観を表現<br>
+            3. べた塗りのアイコン→ピクトグラム感を再現<br>
+            4. ノイズで古紙感の実現<br>
+            5. 赤と白＋2D感のある立体感を表現<br>
+          </div>
+          <div class="margin-1">
+            しかし、あくまで視聴することや配信することに集中してほしいため、上記の世界観の表現は必要最低限にしています。<br>
+            そのため、アニメーション以外では、奇抜な色は配信者の邪魔になるため使用していません。
+            また、要素の視認性を上げるため、若干のシャドウをボタンなどに入れています。
+          </div>
+        </div>
+      </div>
+
+      <div class="workPhotoBox">
+        <div class="workPhotoBoxOther">
+          <img class="workDetailPhotoOther" src="./assets/FL-視聴者d-left.png" alt="FL-視聴者d-left">
+          <p class="photoDescription">視聴者の画面</p>
+        </div>
+        <div class="workPhotoBoxOther">
+          <img class="workDetailPhotoOther" src="./assets/FL-配信者d-right.png" alt="FL-配信者d-right">
+          <p class="photoDescription">配信者の画面</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact showSection">
+      <div class="contactBox">
+        <h2 class="sectionTitle en">Contact</h2>
+        <div class="description contactDescription">
+          制作の依頼・ご相談などお気軽にお問い合わせくださいませ。<br>
+          作品の感想やフィードバックもいただけると嬉しいです🦄
+        </div>
+        <div class="iconBox">
+          <a href="https://www.instagram.com/goro56.official/"><img class="icon" src="./assets/Instagram_black.png" alt="instagram"><p class="hukidashi1">気軽にイラストを見にきてね</p></a>
+          <a href="./assets/resume.zip"><img class="icon" src="./assets/resume.png" alt="resume"><p class="hukidashi2">履歴書と職務経歴書はこちら</p></a>
+          <!-- <a href="#"><img class="icon" src="./assets/Twitter_black.png" alt="twitter"><p class="hukidashi2">問い合わせはDMからだよ</p></a> -->
+        </div>
+      </div>
+      <img class="contactPhoto" src="./assets/contact.png" alt="contact">
+    </section>
+  </div>
+  <footer>
+    <div class="contentsArea footerBox">
+      <ul class="en footernavBox">
+        <li class="footerNavLink"><a href="./index.html">About</a></li>
+        <li class="footerNavLink"><a href="./workList.html">Works</a></li>
+        <li class="footerNavLink"><a href="./index.html#contact">Contact</a></li>
+      </ul>
+      <div class="copyRight">
+        &copy; 2022 DaigoroHiramatsu
+      </div>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
